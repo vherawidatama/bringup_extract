@@ -1,0 +1,17 @@
+go 1.23
+
+use (
+	.
+	../../../../build/soong
+	../../../../build/blueprint
+	../../../../external/golang-protobuf
+	../../../../external/starlark-go
+)
+
+replace (
+	github.com/golang/protobuf v0.0.0 => ../../../../external/golang-protobuf
+	google.golang.org/protobuf v0.0.0 => ../../../../external/golang-protobuf
+	github.com/google/blueprint v0.0.0 => ../../../../build/blueprint
+	go.starlark.net v0.0.0 => ../../../../external/starlark-go
+	android/soong v0.0.0 => ../../../../build/soong
+)

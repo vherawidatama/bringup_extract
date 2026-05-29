@@ -1,0 +1,1 @@
+aidl\ --lang=cpp\ tests/Generic.aidl\ parcelable Generic<@FixedSize @VintfStability T> { T item; }
